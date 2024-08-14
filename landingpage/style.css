@@ -1,0 +1,202 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 60px; 
+}
+
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav form {
+    margin: 0;
+}
+
+nav form button {
+    background-color: #f4f4f4;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+nav form button:hover {
+    background-color: #ddd;
+}
+
+
+section {
+    padding: 50px 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+#home {
+    background-image: url('home.jpg'); 
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#about {
+    background-image: url('th.jpeg'); 
+}
+
+#shopping {
+    background-image: url('bac3.jpeg'); 
+}
+
+#topdeals {
+    background-image: url('images.jpeg'); 
+}
+
+#contact {
+    background-image: url('images\ \(1\).jpeg'); 
+}
+
+#about .content {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+#about .column {
+    flex: 1;
+    margin: 0 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#about h2 {
+    margin-bottom: 15px;
+}
+
+
+#shopping .container,
+#topdeals .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#shopping .products,
+#topdeals .deals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#shopping .product,
+#topdeals .deal {
+    flex: 1 0 21%;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+#shopping .product img,
+#topdeals .deal img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#shopping .btn,
+#topdeals .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#shopping .btn:hover,
+#topdeals .btn:hover {
+    background-color: #555;
+}
+
+
+#contact .container {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact .contact-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#contact .form-group {
+    margin-bottom: 15px;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact .btn:hover {
+    background-color: #555;
+}
